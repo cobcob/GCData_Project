@@ -2,17 +2,17 @@
 
 The output of the code run_analysis.R is the file CourseProject_Tidy.txt. The contents of this file are as follows: 
 
--*subject*
+- *subject*
     Indicates the person to whom the row of data pertains.
-    '''
-    Values are the numbers 1 through 30.
+'''
+    Values are: 
+    1 to 30 as integers. 
     Actual names are not recorded.
-    '''
+'''
 
--*activity* 
-    Indicates the activity to which the data pertains for that person
-    
-    '''
+- *activity* 
+Indicates the activity to which the data pertains for that person
+'''
     Values are: 
         1. WALKING
         2. WALKING_UPSTAIRS
@@ -20,12 +20,10 @@ The output of the code run_analysis.R is the file CourseProject_Tidy.txt. The co
         4. SITTING
         5. STANDING
         6. LAYING
-    '''
-
--*signal*
-    The 3 axial signal being measured from the samsung accelerometer and gyroscope.
-    
-    '''
+'''
+- *signal*
+The 3 axial signal being measured from the samsung accelerometer and gyroscope.
+'''
     Values are: 
         1. tBodyAcc.mean...X
         2. tBodyAcc.mean...Y
@@ -100,13 +98,11 @@ The output of the code run_analysis.R is the file CourseProject_Tidy.txt. The co
         71. fBodyBodyAccJerkMag.std..
         72. fBodyBodyGyroMag.std..
         73. fBodyBodyGyroJerkMag.std..
-    '''
-    
--*average*
-    The average value of the signal for that person and activity.
+'''
+- *average*
+The average value of the signal for that person and activity.
     
     '''
     Values are: 
-    -1..+1 floating 7 decimal numeric value
+    -1 to +1 in the form of a 7 decimal numeric value
     '''
-
