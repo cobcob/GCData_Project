@@ -6,9 +6,9 @@ Repo for the code associated with the Getting and Cleaning data coursera project
 The script run_analysis.R must be run from the same directory as the folder named "UCI HAR Dataset" which contains the project data for test and train.
 
 The script utilizes the following packages which must be installed in R to support the running of this script: 
-1. dplyr
-2. plyr
-3. tidyr
+* dplyr
+* plyr
+* tidyr
 
 The script works in the following manner: 
 1. Read the test and train main data into tbl_df data frames.
@@ -24,4 +24,7 @@ The script works in the following manner:
 11. Using tidyr a tidy set is created from the subset in step 11, the gather function is used to create a narrow dataset with 4 columns and gathers all observations into a signal/average pair except subject and activity.
 12. Finally, the aggregate function is used to calculate the mean value for the average variable broken down by subject, activity and signal.
 13. Before ending, the script cleans the workspace leaving just the tidy data set (tidySet) in memory and printing tidySet out to a text file in the same location as the script naming it "CourseProject_Tidy.txt"
+
+
+The text file contains 73 (mean or sd variables) * 30 (subjects) * 6 (activities) = 13140 observations.
 
